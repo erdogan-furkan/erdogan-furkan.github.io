@@ -1,0 +1,13 @@
+.fadein {
+  animation: fadeInAnimation ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+  }
+}
