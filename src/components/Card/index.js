@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import slugify from "slugify";
 
-function Card({ name, description, image, source, live, prv }) {
+function Card({ name, description, image, source, live, detail }) {
   return (
     <div className="flex flex-col justify-between max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-neutral-800 dark:border-neutral-900">
       <div>
@@ -37,7 +39,14 @@ function Card({ name, description, image, source, live, prv }) {
             Live <FontAwesomeIcon icon={faArrowRight} />
           </a>
         )}
-        {prv && "Private repository"}
+        {detail && (
+          <Link
+            to={slugify(name, { lower: true })}
+            className="p-2 transition duration-500 hover:bg-neutral-800 hover:text-white dark:hover:bg-white dark:hover:text-neutral-800"
+          >
+            More detail <FontAwesomeIcon icon={faArrowRight} />
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import ForestFireInformationSystem from "./pages/Projects/ForestFireInformationSystem";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
+          <Route
+            path="projects/forest-fire-information-system"
+            element={<ForestFireInformationSystem />}
+          />
         </Route>
       </Routes>
     </div>

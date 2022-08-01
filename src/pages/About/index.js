@@ -16,7 +16,7 @@ function About() {
           <img
             src={Profile}
             alt="Profile"
-            className="rounded-full w-64 p-4 mx-auto"
+            className="rounded-full w-64 p-4 mx-auto grayscale"
           />
 
           <p className="text-left p-4">

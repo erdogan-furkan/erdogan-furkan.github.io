@@ -18,7 +18,7 @@ const projectList = [
     description:
       "A web based GIS application with user system to watch forest fires.",
     image: Image9,
-    prv: true,
+    detail: true,
   },
   {
     name: "Typing Speed App",
@@ -53,7 +53,8 @@ const projectList = [
   },
   {
     name: "Station Information System",
-    description: "Basic web based GIS application to get information stations.",
+    description:
+      "Basic web based GIS application to get information about stations.",
     image: Image10,
     source: "https://gitlab.com/erdogan-furkan/durak-sorgulama-sistemi",
   },
