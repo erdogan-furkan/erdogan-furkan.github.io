@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Loader from "../../components/Loader";
 import Profile from "../../assets/images/profile.jpg";
+import Spinner from "../../components/Spinner";
 
 function About() {
   const [loading, setLoading] = useState(true);
@@ -13,11 +14,15 @@ function About() {
         <div className="pb-16 fadein">
           <h1 className="font-bold text-4xl p-4">About me</h1>
           <hr className="border-2 dark:border-neutral-50/25" />
-          <img
-            src={Profile}
-            alt="Profile"
-            className="rounded-full w-64 p-4 mx-auto grayscale"
-          />
+          {!Profile ? (
+            <Spinner color="fill-neutral-600" />
+          ) : (
+            <img
+              src={Profile}
+              alt="Profile"
+              className="rounded-full w-64 p-4 mx-auto grayscale"
+            />
+          )}
 
           <p className="text-left p-4">
             Hello again, my name is Furkan and I am 23. I have completed my
