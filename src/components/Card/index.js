@@ -4,16 +4,25 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import slugify from "slugify";
 import Spinner from "../Spinner";
+import DefaultImage from "../../assets/images/default.png";
 
 function Card({ name, description, image, source, live, detail }) {
   return (
     <div className="flex flex-col justify-between max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-neutral-800 dark:border-neutral-900">
       <div>
         {!image ? (
+          <img
+            className="rounded-t-lg mx-auto"
+            style={{ width: "43%" }}
+            src={DefaultImage}
+            alt={name}
+          />
+        ) : !DefaultImage ? (
           <Spinner color="fill-neutral-600" />
         ) : (
           <img className="rounded-t-lg" src={image} alt={name} />
         )}
+
         <div className="p-5">
           <h5 className="mb-2 text-2xl text-left font-bold tracking-tight text-gray-900 dark:text-white">
             {name}
