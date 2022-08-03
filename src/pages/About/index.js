@@ -31,8 +31,14 @@ function About() {
             I took the first step into the web world by developing web based gis
             applications. After this first step, web development became the
             center of my life and I decided to continue my career in this
-            direction. To view my resume please click{" "}
-            <a href="/" className="font-bold">
+            direction. To view my resume please click
+            <a
+              href="https://drive.google.com/file/d/1GbuG2FhAQ9wIfNU3eyulsdOaYS0LF5Vw/view"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold"
+            >
+              {" "}
               here
             </a>
             .
