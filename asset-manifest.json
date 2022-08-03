@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.85c88231.css",
-    "main.js": "/static/js/main.815d40d3.js",
+    "main.js": "/static/js/main.34b81fea.js",
     "static/js/787.4b5ec25a.chunk.js": "/static/js/787.4b5ec25a.chunk.js",
     "static/media/forest-fire.png": "/static/media/forest-fire.bc3e95edf48b5732fe32.png",
     "static/media/rick-and-morty.png": "/static/media/rick-and-morty.18462202c74373ea69db.png",
@@ -17,11 +17,11 @@
     "static/media/markdown-previewer.png": "/static/media/markdown-previewer.16b414994c13acf6cd23.png",
     "index.html": "/index.html",
     "main.85c88231.css.map": "/static/css/main.85c88231.css.map",
-    "main.815d40d3.js.map": "/static/js/main.815d40d3.js.map",
+    "main.34b81fea.js.map": "/static/js/main.34b81fea.js.map",
     "787.4b5ec25a.chunk.js.map": "/static/js/787.4b5ec25a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85c88231.css",
-    "static/js/main.815d40d3.js"
+    "static/js/main.34b81fea.js"
   ]
 }
